@@ -1,15 +1,10 @@
 import pyspark
 from datetime import datetime
 import pyspark.sql.types as T
-
 from pyspark.sql import SparkSession
-
-
 import pyspark.sql.functions as F
 
 spark = SparkSession.builder.appName('My Spark App').getOrCreate()
-
-
 
 # input data 
 
@@ -105,13 +100,11 @@ print("employee data df")
 employee_data_df.show(truncate=False)
 
 print("job data df")
-
 job_data_df.show(truncate=False)
-print("salary data df")
 
+print("salary data df")
 salary_data_df.show(truncate=False)
 
 print("average salary data df")
-
 average_salary_df.show(truncate=False)
 
