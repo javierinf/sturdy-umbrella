@@ -93,9 +93,6 @@ salary_data_df = comparison_df.withColumn('Flag', F.col('Salary')>F.col('avg(Sal
                 .select('Emp No','Salary','From Date','To Date','Flag')
 
 
-# print("flagged salayr df")
-# flagged_salary_df.show()
-
 print("employee data df")
 employee_data_df.show(truncate=False)
 
