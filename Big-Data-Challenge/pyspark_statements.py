@@ -57,7 +57,8 @@ def user_defined_date_format(date_col):
     return _date.strftime('%d.%B.%Y')
 
 user_defined_timedate_format = F.udf(user_defined_date_format, T.StringType())
-employee_data_df = employee_data_df.withColumn('new_date', user_defined_timedate_format('Birth Date')).drop('Birth Date').withColumnRenamed('new_date', 'Birth Date')
+employee_data_df = employee_data_df.withColumn('new_date', user_defined_timedate_format('Birth Date'))\
+    .drop('Birth Date').withColumnRenamed('new_date', 'Birth Date')
 
 # 4. Add a new column in employeeData where you compute the company email address by the
 # following rule: [first 2 letter of first_name][last_name]@company.com
