@@ -2,7 +2,7 @@
 
 This folder contains 3 files:
 
-- **DDLs.sql**: contains all the DDLs needed to build the schema. The statements had been modified in order to be able to be ran.
+- **DDLs.sql**: contains all the DDLs needed to build the schema. The statements had been modified in order to be able to be ran in postgres
 
 - **Five_more_used**: this sql code answers the first requested question: 
     ```
