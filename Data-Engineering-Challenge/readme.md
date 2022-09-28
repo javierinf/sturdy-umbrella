@@ -9,7 +9,7 @@ This folder contains 3 files:
         Given the table schemas below, write a query to print a new pizza recipe that includes
         the most used 5 ingredients in all the ordered pizzas in the past 6 months.
     ```
-    I replaced the requested 6 months by 16 months in order to actually display some data as every order if from 2021
+    I replaced the requested 6 months for 16 months in order to actually display some data as every order if from 2021
 
  
 
